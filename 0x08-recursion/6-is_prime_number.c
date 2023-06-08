@@ -4,6 +4,8 @@
  * checker - function to check if number is prime
  * @a: integer
  * @b: integer
+ *
+ * Return: an integer
  */
 
 int checker(int a, int b)
@@ -19,6 +21,8 @@ int checker(int a, int b)
 /**
  * is_prime_number - a function that returns 1 if the input integer is a prime
  * @n: integer to be checked
+ *
+ * Return: an integer
  */
 
 int is_prime_number(int n)
