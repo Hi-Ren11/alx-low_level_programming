@@ -16,7 +16,6 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
-	size_t i;
 	size_t length = strlen(str);
 
 	if (str == NULL)
@@ -26,8 +25,7 @@ char *_strdup(char *str)
 	if (duplicate == NULL)
 		return (NULL);
 
-	for (i = 0; i <= length; i++)
-		duplicate[i] = str[i];
+	strcpy (duplicate,str);
 
 
 	return (duplicate);
