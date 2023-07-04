@@ -4,10 +4,12 @@
 #include "lists.h"
 
 /**
- * print_list : print all element in a list_t list.
+ * print_list - print all element in a list_t list.
  * @h: first node
- * Return: numbers of nodes`
+ *
+ * Return: numbers of nodes
  */
+
 size_t print_list(const list_t *h)
 {
 	int count = 0;

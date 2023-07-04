@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h
+#include "lists.h"
 
 /**
  * list_len - list the number of nodes
@@ -9,7 +9,7 @@
  * @h: is  the header (first node)
  *
  * Return: number of nodes
-*/"
+*/
 
 size_t list_len(const list_t *h)
 {

@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include "lists.h"
 
-
 /**
- * add_node : this  adds a new node at the beginning of a list_t list
- * @h: the header of the list_t list.
+ * add_node - this  adds a new node at the beginning of a list_t list
+ * @head: Pointer to the string to be stored in the new node
+ * @str: Pointer to the string to be stored in the new node
+ *
  * Return: return null if failed.
  */
 
@@ -15,11 +16,9 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *new_node;
 	size_t str_len = 0;
 
-	/*set strig length to 0 if its NULL*/
 	if (str == NULL)
 		str_len = 0;
 
-	/*count length of string*/
 	while (str[str_len] != '\0')
 		str_len++;
 
@@ -37,4 +36,4 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new_node;
 
 	return (*head);
-
+}
