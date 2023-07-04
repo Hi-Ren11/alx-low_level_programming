@@ -1,9 +1,14 @@
 #include <stdio.h>
 
 /**
- * himain: this function  runs before main
+ * himain - this function  runs before main
  *
- * Return: 0
+ * Description: This function is annotated with the GCC attribute
+ * '__attribute__((constructor))', which causes it to be executed
+ * automatically before the 'main' function is called during the program's
+ * initialization phase
+ *
+ * Return: void
 */
 
 void __attribute__ ((constructor)) himain()
