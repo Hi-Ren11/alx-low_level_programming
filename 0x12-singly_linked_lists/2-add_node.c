@@ -10,25 +10,30 @@
  * Return: return null if failed.
  */
 
+int _strlen(const char *s)
+ {
+          int i = 0;
 
-list_t *add_node(list_t **head, const char *str)
-{
-	list_t *new;
+          while (s[i] != '\0')
+          {
+                  i++;
+          }
+          return (i);
+  }
 
-	size_t a = 0;
 
-	new = malloc(sizeof(list_t));
+  list_t *add_node(list_t **head, const char *str)
+  {
+          list_t *add;
 
-	if (new == NULL)
-		return (NULL);
+          add = malloc(sizeof(list_t));
+          if (add == NULL)
+                  return (NULL);
+          add->str = strdup(str);
 
-	while (str[a])
-		a++;
+          add->len = _strlen(str);
+          add->next = *head;
+          *head = add;
 
-	new->str = strdup(str);
-	new->len = a;
-	new->next = *head;
-	*head = new;
-
-	return (*head);
-
+          return (add);
+  }
