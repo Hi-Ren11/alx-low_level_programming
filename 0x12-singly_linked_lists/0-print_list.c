@@ -5,7 +5,12 @@
 
 /**
  * print_list - print all element in a list_t list.
- * @h: first node
+ * @h: Pointer to the head of the linked list
+ *
+ * Description: This function traverses the linked list starting from the
+ * provided head node and prints the string data of each node, along with the
+ * number of nodes, in the format: [index] string\n. If the linked list is
+ * empty, it will print nothing
  *
  * Return: numbers of nodes
  */
